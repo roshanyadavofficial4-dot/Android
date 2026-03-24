@@ -1,0 +1,37 @@
+{
+    "name": "Study Mode",
+    "description": "Turns off distractions and opens study materials.",
+    "trigger": {
+        "type": "manual"
+    },
+    "steps": [
+        {
+            "action": "system.wifi.set",
+            "data": {
+                "state": "off"
+            },
+            "abort_on_fail": false
+        },
+        {
+            "action": "system.volume.set",
+            "data": {
+                "level": 30
+            },
+            "abort_on_fail": false
+        },
+        {
+            "action": "app.launch",
+            "data": {
+                "app_name": "adobe reader"
+            },
+            "abort_on_fail": true
+        },
+        {
+            "action": "media.music.play",
+            "data": {
+                "genre": "lo-fi"
+            },
+            "abort_on_fail": false
+        }
+    ]
+}

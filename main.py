@@ -34,7 +34,8 @@ class AryaOS:
                 self.logger.info(f"Heavy module detected ({class_name}). Applying 1.5s delay to stabilize RAM...")
                 await asyncio.sleep(1.5)
             else:
-                await asyncio.sleep(0.1) # Standard delay for all other modules
+                while True:
+            await asyncio.sleep(2) # Standard delay for all other modules
 
             module = importlib.import_module(module_path)
             init_func = getattr(module, class_name)

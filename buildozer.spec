@@ -20,7 +20,7 @@ version = 1.0.0
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy,kivymd,pillow,requests,beautifulsoup4,google-genai,plyer,pyjnius,websockets,pyaudio,SpeechRecognition,gTTS,pypdf2,psutil
+requirements = python3,kivy,kivymd,pillow,requests,beautifulsoup4,google-genai,plyer,pyjnius,websockets,SpeechRecognition,gTTS,pypdf2
 
 # (str) Custom source folders for requirements
 # Custom architectures should be handled by p4a or buildozer automatically
