@@ -1,0 +1,8 @@
+{
+  "name": "ARYA_OS",
+  "description": "A highly advanced, modular AI assistant designed for Android with a witty, sarcastic British personality.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

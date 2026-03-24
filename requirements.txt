@@ -1,0 +1,20 @@
+# A.R.Y.A. OS - Core Requirements (Slim Build)
+asyncio
+google-genai>=0.3.0
+SpeechRecognition>=3.10.0
+gTTS>=2.5.1
+Pillow>=10.0.0
+psutil>=5.9.5
+plyer>=2.1.0
+pyjnius>=1.6.1
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+wikipedia>=1.4.0
+duckduckgo-search>=3.8.5
+websockets>=12.0
+pypdf2
+pyaudio
+kivy
+kivymd
+
+# Note: sqlite3, json, os, sys, re, shutil, time, datetime are part of the Python Standard Library.
