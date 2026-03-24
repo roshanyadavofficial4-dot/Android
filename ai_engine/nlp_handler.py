@@ -37,9 +37,9 @@ class NLPHandler:
         try:
             with open("core/data/secrets.json", "r") as f:
                 secrets = json.load(f)
-                return secrets.get("gemini", os.environ.get("GEMINI_API_KEY", "AIzaSyABSqyqE4nKyKXZEHnToemhP-C6T1a9was"))
+                return secrets.get("gemini", os.environ.get("GEMINI_API_KEY", ""))
         except FileNotFoundError:
-            return os.environ.get("GEMINI_API_KEY", "AIzaSyABSqyqE4nKyKXZEHnToemhP-C6T1a9was")
+            return os.environ.get("GEMINI_API_KEY", "")
 
     async def _update_api_keys(self, payload: dict):
         gemini_key = payload.get("gemini")

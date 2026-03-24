@@ -8,7 +8,7 @@ class TaskManager:
     def __init__(self, event_bus: EventBus):
         self.event_bus = event_bus
         self.logger = arya_logger
-        self.db_path = os.path.join(os.path.dirname(__file__), "tasks.db")
+        self.db_path = os.path.join(os.environ.get("HOME", "."), "tasks.db")
         self._init_db()
         
         self.event_bus.subscribe("task.add", self.add_task)

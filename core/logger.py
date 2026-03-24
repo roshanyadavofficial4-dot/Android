@@ -4,7 +4,7 @@ import sys
 
 class AryaLogger:
     def __init__(self):
-        self.log_dir = "logs"
+        self.log_dir = os.path.join(os.environ.get("HOME", "."), "logs")
         self.log_file = os.path.join(self.log_dir, "arya.log")
         self._setup_logger()
 

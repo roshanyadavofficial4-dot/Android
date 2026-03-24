@@ -35,6 +35,7 @@ class AryaOS:
                 await asyncio.sleep(1.5)
             else:
                 while True:
+                    await asyncio.sleep(0.1)
             await asyncio.sleep(2) # Standard delay for all other modules
 
             module = importlib.import_module(module_path)
