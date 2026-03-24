@@ -1,5 +1,11 @@
 [app]
 
+# --- INJECTED BY CORE FIX ---
+android.accept_sdk_license = True
+android.build_tools_version = 33.0.2
+# ----------------------------
+
+
 # (str) Title of your application
 title = A.R.Y.A. OS
 
