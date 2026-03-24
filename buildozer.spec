@@ -218,3 +218,8 @@ warn_on_root = 1
 # (str) Path to bin directory, if empty, it will be the directory where
 # buildozer.spec is located.
 #bin_dir = ./bin
+
+# Auto-accept licenses to prevent GitHub Actions from freezing
+android.accept_sdk_license = True
+# Use stable build tools matching API 33
+android.build_tools_version = 33.0.2
